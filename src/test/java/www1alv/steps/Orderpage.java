@@ -29,6 +29,7 @@ public class Orderpage {
     private By nextStep3 = byXpath("//a[@class='ait-button ait-button-primary order-form-forward-button']");
     private By nameBeforeCheckout = byXpath("//div[@class='ait-cart-item-info']");
     private By priceBeforeCheckout = byXpath("//span[@class='ait-cart-total-count ait-cart-total-price']");
+    private By byElements = By.xpath("//div[@class='col-1']");
 
     private Product product = new Product();
 
@@ -92,7 +93,7 @@ public class Orderpage {
 
     @And("I fetch user information before checkout")
     public void getUserInformation(){
-        User.setCheckoutUserData($(byXpath("//*[@id=\"main\"]/div/div/form/div[2]/div/div[1]")).getText().split("[^\\S]+"));
+        User.setCheckoutUserData($(byElements).getText().split("[^\\S]+"));
         System.out.println(Arrays.toString(User.getCheckoutUserData()));}
 
     @Then("I compare product and user information")
