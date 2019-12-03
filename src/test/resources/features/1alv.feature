@@ -1,3 +1,4 @@
+  @product_buy_test
   Feature: 1.lv product order steps
   This feature tests product order steps starting from home page and ending at checkout page
 
