@@ -98,7 +98,7 @@ public class Orderpage {
 
     @Then("I compare product and user information")
     public void assertInfo(){
-        softAssert.assertEquals(Product.getProductName(),Product.getProductNameBeforeCheckout());
+        softAssert.assertTrue(Product.getProductName().equalsIgnoreCase(Product.getProductNameBeforeCheckout()));
         softAssert.assertEquals(Product.getProductPrice(),Product.getProductPriceBeforeCheckout());
         softAssert.assertEquals(User.getUserName(),User.getCheckoutUserData()[1]);
         softAssert.assertEquals(User.getUserLastname(),User.getCheckoutUserData()[2]);
