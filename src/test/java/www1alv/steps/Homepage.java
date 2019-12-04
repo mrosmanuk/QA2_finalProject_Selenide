@@ -1,19 +1,20 @@
 package www1alv.steps;
 
+import com.codeborne.selenide.Configuration;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.By;
-import static com.codeborne.selenide.Selectors.*;
+
+import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.*;
-import com.codeborne.selenide.Configuration;
 
 public class Homepage {
 
     private By fullScreenBanner = byXpath("/html/body/div[1]/div/div/a");
-    private By getFullScreenBannerFrame = By.xpath("//*[@id=\"mt-65cf2a318dbd5e21\"]");
+    private By getFullScreenBannerFrame = By.xpath("//*[@id='mt-65cf2a318dbd5e21']");
     private By advSlider = By.xpath("//div[@class='close-button-slider desktop']");
-    private By advSliderFrame = By.xpath("//*[@id=\"mt-b832a55b5fb34368\"]");
+    private By advSliderFrame = By.xpath("//*[@id='mt-b832a55b5fb34368']");
     private By cookieButton = By.xpath("//a[@class='c-button-inverse']");
     private By phoneCategory = By.xpath("//a[contains(@href,'telefoni_plansetdatori')]");
     private By sortBySelector = By.xpath("//a[@class='select-opener select-add-info']");

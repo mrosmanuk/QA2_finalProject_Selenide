@@ -20,12 +20,12 @@ public class Orderpage {
     private By inputEmail = byXpath("//input[@id='order_main_data_email']");
     private By inputPhoneNumber = byXpath("//input[@id='order_main_data_contact_phone_number']");
     private By spamAgreementSelector = byXpath("//span[@class='ui-button-icon-primary ui-icon ui-icon-triangle-1-s']");
-    private By noSpamOption = byXpath("//*[@id=\"ui-id-2\"]/li[2]");
+    private By noSpamOption = byXpath("//a[contains(.,'Nev')]|//a[contains(.,'Не хочу')]");
     private By acceptTerms = byXpath("//input[@id='accept_purchase_agreement']");
     private By deliveryMethod = byXpath("//article[@data-delivery-type-id='9']");
     private By nextStep2 = byXpath("//a[@class='ait-button ait-button-primary order-form-forward-button']");
     private By contactMethod = byXpath("//span[@class='ui-button-icon-primary ui-icon ui-icon-triangle-1-s']");
-    private By contactMethodByEmail = byXpath("//a[contains(.,'E-past')]");
+    private By contactMethodByEmail = byXpath("//a[contains(.,'E-past')]|//a[contains(.,'По э-')]");
     private By nextStep3 = byXpath("//a[@class='ait-button ait-button-primary order-form-forward-button']");
     private By nameBeforeCheckout = byXpath("//div[@class='ait-cart-item-info']");
     private By priceBeforeCheckout = byXpath("//span[@class='ait-cart-total-count ait-cart-total-price']");
