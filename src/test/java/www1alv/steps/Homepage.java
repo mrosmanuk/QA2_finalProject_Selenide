@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class Homepage {
 
-    private By fullScreenBanner = byXpath("/html/body/div[1]/div/div/a");
+    private By fullScreenBanner = byXpath("//a[@class='close-button animated']");
     private By getFullScreenBannerFrame = By.xpath("//*[@id='mt-65cf2a318dbd5e21']");
     private By advSlider = By.xpath("//div[@class='close-button-slider desktop']");
     private By advSliderFrame = By.xpath("//*[@id='mt-b832a55b5fb34368']");
