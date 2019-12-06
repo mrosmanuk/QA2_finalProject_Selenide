@@ -7,7 +7,8 @@
 
   Given I open website
   And I check for fullscreen banner, closing it if found
-  And I check for slider banner, closing it if found
+  And I check for 1st slider banner, closing it if found
+  And I check for 2nd slider banner, closing it if found
   And I accept cookies
   When I open mobile devices category
   And I check for fullscreen banner, closing it if found
